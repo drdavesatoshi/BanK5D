@@ -1,0 +1,32 @@
+{
+	"private": true,
+	"name": "Bank5D",
+	"description": "A better way, a better bank, a better today",
+	"homepage": "https://drdavesatoshi.github.io/BanK5D",
+	"scripts": {
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
+		"build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+		"start": "gatsby develop",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean",
+		"deploy": "gatsby build && gh-pages -d public -b main"
+	},
+	"dependencies": {
+		"@lekoarts/gatsby-theme-cara": "^5.1.4",
+		"gatsby": "^5.13.3",
+		"gatsby-plugin-manifest": "^5.13.1",
+		"gatsby-plugin-webpack-statoscope": "^1.0.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.19.13",
+		"@types/react": "^18.2.51",
+		"@types/react-dom": "^18.2.18",
+		"cross-env": "^7.0.3",
+		"gh-pages": "^6.1.1",
+		"typescript": "^5.3.3"
+	}
+}
